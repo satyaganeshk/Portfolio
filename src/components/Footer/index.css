@@ -1,0 +1,57 @@
+/* Footer.css */
+.footer {
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 1.5rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s,
+    box-shadow 0.3s;
+}
+.anchor {
+  margin: 10px;
+  font-weight: 700;
+  color: wheat;
+  text-decoration: none;
+}
+.footer:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 -4px 8px rgba(59, 132, 234, 0.4); /* Enhanced shadow */
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4e94f3; /* Light blue link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffcc00; /* Highlighted yellow */
+}
+@media screen and (max-width: 762px) {
+  .anchor {
+    margin: 5px;
+  }
+}

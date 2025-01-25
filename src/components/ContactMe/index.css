@@ -1,0 +1,52 @@
+.icon1 {
+  font-size: 25px;
+}
+.bg-purples {
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 30px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.3s;
+  cursor: pointer;
+  font-family:;
+}
+#contact {
+  background: linear-gradient(
+    343.07deg,
+    rgba(135, 52, 218, 0.06) 5.71%,
+    rgba(132, 59, 206, 0) 64.83%
+  );
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 100% 98%, 0px 100%);
+}
+.bg-purples:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 30px rgba(106, 195, 222, 0.1);
+}
+@media screen and (max-width: 767px) {
+  .icon1 {
+    font-size: 22px;
+  }
+  .bg-purples {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out backwards;
+  text-align: center;
+}

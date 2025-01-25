@@ -1,0 +1,115 @@
+.bg-purplq {
+  background-size: cover;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 70% 92%, 0px 100%);
+  background-color: rgb(25, 25, 36);
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  padding: 80px 30px;
+  height: 100vh;
+  z-index: 1;
+}
+
+img {
+  z-index: 1; /* Bring photo to front */
+  position: relative;
+}
+
+.height {
+  height: 380px;
+  background-color: #252525;
+  border: 1px solid #4e9ee3;
+  position: relative;
+  border-radius: 100px;
+  animation: neon-border 3s infinite linear;
+  overflow: hidden;
+}
+@keyframes neon-border {
+  0% {
+    box-shadow:
+      0 0 5px rgba(71, 108, 218, 1),
+      0 0 20px rgba(71, 108, 218, 0.8),
+      0 0 30px rgba(71, 108, 218, 0.6);
+  }
+  33% {
+    box-shadow:
+      0 0 5px rgb(186, 247, 244),
+      0 0 20px rgba(180, 231, 215, 0.8),
+      0 0 30px rgba(173, 241, 232, 0.6);
+  }
+  66% {
+    box-shadow:
+      0 0 5px rgb(238, 238, 211),
+      0 0 20px rgba(212, 212, 195, 0.8),
+      0 0 30px rgba(212, 212, 196, 0.6);
+  }
+  100% {
+    box-shadow:
+      0 0 5px rgba(71, 108, 218, 1),
+      0 0 20px rgba(71, 108, 218, 0.8),
+      0 0 30px rgba(71, 108, 218, 0.6);
+  }
+}
+
+.h2 {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 35px;
+}
+.h1 {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: start;
+}
+.h3 {
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+  color: #c7dfe5;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: start;
+}
+@media screen and (max-width: 767px) {
+  .bg-purplq {
+    text-align: center;
+    min-height: 160vh;
+    margin-top: 80px;
+  }
+  .height {
+    height: 300px;
+    margin-top: 15px;
+  }
+  .h1 {
+    text-align: center;
+  }
+  .h3 {
+    text-align: center;
+  }
+  .h2 {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+.btn-gradient {
+  background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2430.jpg?t=st=1735559094~exp=1735562694~hmac=f1c5317b165668479551fecefaa91393bd5ac9bb28a59c96cf8afb2fb714f7ca&w=900');
+  color: #ffffff;
+  width: 220px;
+  height: 50px;
+  border: none;
+  background-size: cover;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.3s;
+  cursor: pointer;
+}
+.btn-gradient:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 20px 30px rgba(106, 195, 222, 0.1);
+}

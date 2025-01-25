@@ -1,0 +1,29 @@
+.bg-purp {
+  background-color: rgb(25, 25, 36);
+  text-align: center;
+  font-weight: 800;
+  max-width: 100vw;
+  font-family: 'Gill Sans Extrabold', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.transparent-element {
+  opacity: 0.9;
+}
+.user-icon {
+  height: 33px;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+.btn-gradien {
+  background-color: rgb(40, 40, 221);
+  color: #ffffff;
+  width: 120px;
+  height: 30px;
+  border: none;
+  background-size: cover;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+}

@@ -1,0 +1,138 @@
+/* G
+
+/* Skills List */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 50px;
+  list-style: none;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(
+      45.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0.15) 100%
+    );
+  width: 100%;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 30% 98%, 0px 100%);
+}
+#skills {
+  background: linear-gradient(
+      38.73deg,
+      rgba(204, 0, 187, 0.15) 0%,
+      rgba(201, 32, 184, 0) 50%
+    ),
+    linear-gradient(
+      141.27deg,
+      rgba(0, 70, 209, 0) 50%,
+      rgba(0, 70, 209, 0.15) 100%
+    );
+}
+/* Tech Section */
+.tech-section {
+  border: 1px solid #6576d9;
+  max-width: 500px;
+  padding-left: 22px;
+  padding: 20px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(71, 108, 218, 0.5);
+  text-align: center;
+}
+
+.tech-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #5fa7e7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Tech Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tech-card {
+  background-color: #252525;
+  border: 1px solid #444;
+  border-radius: 8px;
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tech-card img {
+  width: 30px; /* Uniform image size */
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.tech-card p {
+  font-size: 1rem;
+  margin: 7px;
+  color: #ccc;
+}
+
+.tech-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(20, 149, 192, 0.5);
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .tech-section h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 728px) {
+  .tech-section h2 {
+    font-size: 1.4rem;
+  }
+  .skills-list {
+    padding: 20px;
+  }
+  .tech-section {
+    padding: 18px;
+    padding-left: 20px;
+  }
+  .tech-card {
+    padding: 10px;
+    max-width: 90px;
+  }
+  .tech-card p {
+    font-size: 15px;
+  }
+  .tech-card img {
+    height: 30px;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
+}
