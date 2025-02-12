@@ -4,8 +4,8 @@ import './index.css'
 const texts = ['Full Stack Developer', 'Programmer', 'Web Developer']
 
 const AutoTyping = () => {
-  const typingSpeed = 100 // Speed for typing each character
-  const pauseTime = 2000 // Pause duration before deleting or switching text
+  const typingSpeed = 100 
+  const pauseTime = 2000
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
   const [displayedText, setDisplayedText] = useState('')
